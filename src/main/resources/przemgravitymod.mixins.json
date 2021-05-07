@@ -9,6 +9,7 @@
         "MixinPlayerEntity"
     ],
     "client": [
+        "MixinBipedModel",
         "MixinMovementInputFromOptions"
     ],
     "injectors": {
