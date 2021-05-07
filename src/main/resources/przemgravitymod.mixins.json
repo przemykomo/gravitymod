@@ -8,6 +8,9 @@
         "MixinEntity",
         "MixinPlayerEntity"
     ],
+    "client": [
+        "MixinMovementInputFromOptions"
+    ],
     "injectors": {
         "defaultRequire": 1
     }

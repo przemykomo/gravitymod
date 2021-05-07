@@ -23,6 +23,12 @@ public abstract class MixinPlayerEntity extends LivingEntity {
     }
 
     @Override
+    public void moveRelative(float p_213309_1_, Vector3d p_213309_2_) {
+        Vector3d vector3d = getInputVector(p_213309_2_, p_213309_1_, this.yRot + 180);
+        this.setDeltaMovement(this.getDeltaMovement().add(vector3d));
+    }
+
+    @Override
     public void turn(double a, double b) {
         super.turn(-a, -b);
     }
